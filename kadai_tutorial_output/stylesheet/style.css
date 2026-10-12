@@ -51,22 +51,18 @@ p {
   border: none;
 }
 
-#hamburger_btn_check:checked~.hamburger_btn .btn_close {
+
+.hamburger_menu .btn_close {
+  display: none;
+}
+
+.hamburger_menu[aria-expanded="true"] .btn_close {
   display: block;
 }
 
-#hamburger_btn_check:checked~.hamburger_btn .btn_open {
+.hamburger_menu[aria-expanded="true"] .btn_open {
   display: none;
 }
-
-.btn_close {
-  display: none;
-}
-
-#hamburger_btn_check {
-  display: none;
-}
-
 /* ----------------------------------------------- カルーセル */
 .my_carousel_caption {
   font-size: 52px;
@@ -148,9 +144,10 @@ p {
   border-bottom: solid 1px #FFFFFF;
 }
 
+
 .h_420 {
-  height: 420px;
-  position: relative;
+  min-height: 420px;
+  height: auto;
 }
 
 .reviewer_img {
@@ -165,13 +162,6 @@ p {
   height: 25px;
 }
 
-.fix_bottom {
-  position: absolute;
-  width: 80px;
-  height: 44px;
-  left: 24px;
-  bottom: 24px;
-}
 
 /* ----------------------------------------------- アクセス */
 .access::after {
@@ -231,6 +221,17 @@ p {
   font-family: 'Lora', serif;
 }
 
+
+.footer_background_wrapper {
+  overflow: hidden;
+}
+
+.footer_background {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* スマートフォン画面幅（最大991pxまで）でスタイルを適用 */
 @media screen and (max-width: 991px) {
   .footer_text,
@@ -240,12 +241,14 @@ p {
     position: relative;
   }
 
-  .copy_right>p, img {
-    margin-right: 1rem;
-    font-size: 14px;
-    margin: 0;
-    line-height: 35px;
-  }
+
+.copy_right > p,
+.copy_right img {
+  margin-right: 1rem;
+  font-size: 14px;
+  margin: 0;
+  line-height: 35px;
+}
 }
 
 @media screen and (max-width: 375px) {
@@ -256,11 +259,12 @@ p {
     position: relative;
   }
 
-  .copy_right>p,
-  img {
-    margin-right: 1rem;
-    font-size: 14px;
-    margin: 0;
-    line-height: 35px;
-  }
+ 
+.copy_right > p,
+.copy_right img {
+  margin-right: 1rem;
+  font-size: 14px;
+  margin: 0;
+  line-height: 35px;
+}
 }

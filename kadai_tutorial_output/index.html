@@ -33,14 +33,17 @@
         <a class="navbar-brand my_navbar_brand">
           <img class="img-fluid navbar_brand_logo" src="img/site_logo.png" alt="サイトアイコン"><span>SAMURAI KITCHEN</span>
         </a>
-        <div class="navbar-toggler hamburger_menu" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          　aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <input type="checkbox" id="hamburger_btn_check">
-          <label for="hamburger_btn_check" class="hamburger_btn">
-            <img class="btn_open" src="img/button_open.png" alt="ナビゲーションバーのボタン">
-            <img class="btn_close" src="img/button_close.png" alt="ナビゲーションバーのボタン">
-          </label>
-        </div>
+
+<div class="navbar-toggler hamburger_menu"
+     data-bs-toggle="collapse"
+     data-bs-target="#navbarNav"
+     aria-controls="navbarNav"
+     aria-expanded="false"
+     aria-label="Toggle navigation">
+  <img class="btn_open" src="img/button_open.png" alt="メニューを開く">
+  <img class="btn_close" src="img/button_close.png" alt="メニューを閉じる">
+</div>
+
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item px-2">
@@ -328,8 +331,9 @@
           </div>
           <div class="row pb-5 justify-content-center">
             <div class="col-12 col-lg-5 mt-3">
-              <div class="bg-white h_420">
-                <div class="p-4">
+
+<div class="bg-white h_420 d-flex flex-column">
+  <div class="p-4 d-flex flex-column flex-grow-1">
                   <div class="d-flex align-items-center">
                     <img src="img/customer-woman.png" class="reviewer_img" alt="サンプル画像">
                     <div>
@@ -348,13 +352,15 @@
                   <p>
                     ディナーに来た際にワインを選ぶのに悩んでいたら、注文する料理に合ったオススメのワインを教えてもらえて、ワインのテイスティングまでさせてもらえたのでとても嬉しかったです。次はワインを選んでからオススメの料理を聞いてみようと思います。
                   </p>
-                  <button type="button" class="btn btn-warning shadow fix_bottom">詳細</button>
+                 
+<button type="button" class="btn btn-warning shadow mt-auto">詳細</button>
                 </div>
               </div>
             </div>
             <div class="col-12 col-lg-5 mt-3">
-              <div class="bg-white h_420">
-                <div class="p-4">
+
+<div class="bg-white h_420 d-flex flex-column">
+  <div class="p-4 d-flex flex-column flex-grow-1">
                   <div class="d-flex align-items-center">
                     <img src="img/customer-man.png" class="reviewer_img" alt="サンプル画像">
                     <div>
@@ -373,7 +379,8 @@
                   <p>
                     パートナーとのアニバーサリーにこちらのお店を選んで正解でした。店内の雰囲気も落ち着いていて上品で、事前に予約した際に打ち合わせしたサプライズが成功したあとに、さらにお店からもサプライズをいただけて、とても素敵な思い出になりました。
                   </p>
-                  <button type="button" class="btn btn-warning shadow fix_bottom">詳細</button>
+
+<button type="button" class="btn btn-warning shadow mt-auto">詳細</button>
                 </div>
               </div>
             </div>
@@ -447,9 +454,12 @@
           </div>
 
           <!-- 右側背景画像 -->
-          <div class="col-12 col-lg-6 d-none d-lg-block">
-            <img src="img/background-footer.jpg" alt="背景画像">
-          </div>
+
+<div class="col-12 col-lg-6 d-none d-lg-block footer_background_wrapper">
+  <img src="img/background-footer.jpg"
+       class="footer_background"
+       alt="背景画像">
+</div>
         </div>
       </div>
     </footer>
